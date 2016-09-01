@@ -1,0 +1,20 @@
+{
+  "name": "Universal Search Tool", 
+  "author": "Anuj Shah",
+  "description": "Search on the search engine of your choosing.",
+  "version": "1.0",
+  "icons":
+  {
+	"16": "16.png",
+	"32": "32.png",
+	"48": "48.png",
+	"128": "128.png"
+  },
+  "browser_action": 
+  {
+    "default_icon": "magnifying-glass.png",
+    "default_popup": "popup.html",
+    "default_title": "Search for what you want!"
+  },
+  "manifest_version": 2
+}

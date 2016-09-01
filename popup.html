@@ -1,0 +1,122 @@
+<!doctype html>
+  <head>
+    <title> Universal Search Tool </title>
+	<meta name="author" content="Anuj Shah">
+	<style>
+		div.hidden 
+		{
+			display: none;
+		}
+	</style>
+  </head>
+  <body>
+	<form id = "engine">
+		<input id="g" type="radio" name="search engine" value="google">
+		<label for="g">Google</label>
+		<input id="y" type="radio" name="search engine" value="yahoo">
+		<label for="y">Yahoo</label>
+		<input id="b" type="radio" name="search engine" value="bing">
+		<label for="b">Bing</label>
+		<input id="as" type="radio" name="search engine" value="ask">
+		<label for="as">Ask</label>
+		<input id="ao" type="radio" name="search engine" value="aol">
+		<label for="ao">AOL</label>
+	</form>
+    <div id = "google">
+		<form method = "get" id = "url" action = "https://www.google.com/search" target = "_blank">
+			<div id = "sty" style = "border:5px solid blue; padding:2px; width:25em;">
+				<table border = "0" cellpadding = "0">
+					<tr><td>
+						<input 
+							type = "text"
+							spellcheck = "false"
+							name = "q" 
+							size = "28"
+							maxlength = "255" 
+							id = "input" 
+							placeholder = "Search Google"/>
+						<input style = "width:4.65em;" type = "submit" value = "Search"/>
+					</td></tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div id = "yahoo">
+		<form method = "get" id = "url" action = "http://search.yahoo.com/search" target = "_blank">
+			<div id = "sty" style="border:5px solid purple; padding:2px; width:25em;">
+				<table border="0" cellpadding="0">
+					<tr><td>
+						<input 
+							type = "text" 
+							spellcheck = "false"
+							name = "q" 
+							size = "28"
+							maxlength = "255" 
+							id = "input" 
+							placeholder = "Search Yahoo"/>
+						<input style = "width:4.65em;" type = "submit" value = "Search"/>
+					</td></tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div id = "bing">
+		<form method = "get" id = "url" action = "http://www.bing.com/search" target = "_blank">
+			<div id = "sty" style = "border:5px solid grey; padding:2px; width:25em;">
+				<table border = "0" cellpadding = "0">
+					<tr><td>
+						<input 
+							type = "text" 
+							spellcheck = "false"
+							name = "q" 
+							size = "28"
+							maxlength = "255" 
+							id = "input" 
+							placeholder = "Search Bing"/>
+						<input style = "width:4.65em;" type = "submit" value = "Search"/>
+					</td></tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div id = "ask">
+		<form method = "get" id = "url" action = "http://www.ask.com/web" target = "_blank">
+			<div id = "sty" style = "border:5px solid rgb(204,0,0); padding:2px; width:25em;">
+				<table border = "0" cellpadding = "0">
+					<tr><td>
+						<input
+							type = "text"
+							spellcheck = "false"
+							name = "q"
+							size = "28"
+							maxlength = "255"
+							id = "input"
+							placeholder = "Search Ask"/>
+						<input style = "width:4.65em;" type = "submit" value = "Search"/>
+					</td></tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div id = "aol">
+		<form method = "get" id = "url" action = "http://search.aol.com/aol/search" target = "_blank">
+			<div id = "sty" style = "border:5px solid black; padding:2px; width:25em;">
+				<table border = "0" cellpadding = "0">
+					<tr><td>
+						<input
+							type = "text"
+							spellcheck = "false"
+							name = "q"
+							size = "28"
+							maxlength = "255"
+							id = "input"
+							placeholder = "Search AOL"/>
+						<input style = "width:4.65em;" type = "submit" value = "Search"/>
+					</td></tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<script src = "popup.js"> </script>
+  </body>
+</html>
